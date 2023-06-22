@@ -1,56 +1,40 @@
-import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+// import HeroSection from "../components/HeroSection"
+import Navbar from "../components/Navbar"
+import Rocket from "../components/Rocket"
+import Features from "../components/Features"
+import Features1 from "../components/Features1"
+import Features2 from "../components/Features2"
+import Features3 from "../components/Features3"
+import Features4 from "../components/Features4"
+import OurFact from "../components/OurFact"
+import OurExperiance from "../components/OurExperiance"
+import ClientSay from "../components/ClientSay"
+import OurService from "../components/OurService"
+import OurBlog from "../components/OurBlog"
+import Footer from "../components/Footer"
 
-import { Hero } from '../components/Hero'
-import { Container } from '../components/Container'
-import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
 
-const Index = () => (
-  <Container height="100vh">
-    <Hero />
-    <Main>
-      <Text color="text">
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
-        <Code>TypeScript</Code>.
-      </Text>
+import Stack from '@chakra-ui/react'
 
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
-    </Main>
-
-    <DarkModeSwitch />
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
-  </Container>
-)
-
-export default Index
+export default function Home() {
+  return (
+    <>
+    {/* <HeroSection/> */}
+    
+    <Navbar/>
+    <Rocket/>
+    <Features/>
+    <Features1/>
+    <Features2/>
+    <Features3/>
+    <Features4/>
+    <OurFact/>
+    <OurExperiance/>
+    <ClientSay/>
+    <OurService/>
+    <OurBlog/>
+    <Footer/>
+    
+    </>
+  )
+}

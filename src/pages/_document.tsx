@@ -1,18 +1,22 @@
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
-import { ColorModeScript } from '@chakra-ui/react'
-
-export default class Document extends NextDocument {
-  render() {
-    return (
-      <Html>
-        <Head />
-        <body>
-          {/* Make Color mode to persists when you refresh the page. */}
-          <ColorModeScript />
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    )
-  }
+import { ChakraProvider } from '@chakra-ui/react'
+// import Navbar from "../components/Navbar"
+// import Navbar from "../components/Navbar"
+// import Footer from "../components/Footer"
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <ChakraProvider>
+        {/* <Navbar /> */}
+          
+          {children}
+          {/* <Footer /> */}
+      </ChakraProvider>
+      </body>
+    </html>
+  );
 }
