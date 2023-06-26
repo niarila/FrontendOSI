@@ -2,7 +2,9 @@ import {Container, Grid} from "@chakra-ui/react"
 import Navbar from "../components/Navbar"
 import Blog from "../components/Blog"
 import OurBlog2 from "../components/OurBlog2"
+import WeAreHiring2 from "../components/WeAreHiring2"
 import FooterBlog from "../components/FooterBlog"
+
 
 export default function AboutUs() {
     return (
@@ -18,6 +20,7 @@ export default function AboutUs() {
       <OurBlog2/>
       </Grid>
       </Container>
+      <WeAreHiring2/>
       <FooterBlog/>
       
       </>

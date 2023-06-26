@@ -8,17 +8,8 @@ const App = () => {
         backgroundImage="https://i.ibb.co/34pTvJg/WE-ARE-HIRING.png"
         backgroundSize="cover"
         backgroundPosition="center"
-        height="70vh"
-        // width="50vh"
-      >
-        {/* <Center height="100%">
-          <Box p={4} >
-            <Heading color="#FFFFFF" textAlign="center">About Us</Heading>
-            <Text fontSize="xl" color="#FFFFFF"  textAlign={"justify"}>We professionally deliver digital solutions using agile
-               methodology to help established companies and startups perform by
-              providing high-quality software development services.</Text>
-          </Box>
-        </Center> */}
+        height="520px"   
+      >    
       </Box>
     </ChakraProvider>
   );

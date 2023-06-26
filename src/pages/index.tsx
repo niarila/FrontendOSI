@@ -13,10 +13,14 @@ import OurService from "../components/OurService"
 import OurBlog from "../components/OurBlog"
 import Footer from "../components/Footer"
 
+// import { useEffect } from "react";
+// import { gql } from "@apollo/client";
+// import client from "../../apollo-client";
 
 import Stack from '@chakra-ui/react'
 
 export default function Home() {
+
   return (
     <>
     {/* <HeroSection/> */}
@@ -24,10 +28,10 @@ export default function Home() {
     <Navbar/>
     <Rocket/>
     <Features/>
-    <Features1/>
+    {/* <Features1/>
     <Features2/>
     <Features3/>
-    <Features4/>
+    <Features4/> */}
     <OurFact/>
     <OurExperiance/>
     <ClientSay/>

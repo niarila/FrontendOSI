@@ -24,9 +24,43 @@
 //   <Box>
 // }
 
+import { gql, useQuery } from "@apollo/client";
+// import { useEffect } from 'react';
+
+const LIST_KARYAWAN = gql`
+  query listKaryawan {
+    karyawans {
+      id_karyawan
+      divisi {
+        id_divisi
+        nama_divisi
+      }
+      gambar
+      nama_karyawan
+    }
+  }
+`
+
 import { Box, Text , Heading} from '@chakra-ui/react';
 
+// const Test = () => {
+//   console.log("IKI TEST");
+// }
+
 const Carousel = () => {
+
+  const {data, loading, error} = useQuery(LIST_KARYAWAN);
+
+  // Test();
+  // useEffect(() => {
+  //   Test();
+  //   console.log("TEST");
+  // },[])
+
+  console.log(data);
+  // if(data) {
+  // }
+  
   const carouselItems = [
     {
       image: "https://i.ibb.co/VLLGHdm/001-1.png",
@@ -66,6 +100,8 @@ const Carousel = () => {
     </Box>
   );
 };
+
+
 
 export default Carousel;
 
